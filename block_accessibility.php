@@ -306,7 +306,7 @@ class block_accessibility extends block_base {
             $content .= html_writer::end_tag('button');
             $content .= html_writer::end_tag('div');
 
-            $content .= html_writer::tag('p', 'Bionic Reading', array('style'=>'width:fit-content; position:relative; top:-45px;'));
+            $content .= html_writer::tag('p', get_string('bionictitle', 'block_accessibility'), array('style'=>'width:fit-content; position:relative; top:-45px;'));
 
             $content .= html_writer::start_tag('div', array('style' => 'width:100%;'));
             $content .= html_writer::start_tag('div', array('style' => 'margin:0 auto; display:none; position:relative; top:-20px;', 'id' => 'BRsettings', 'class'=>'mce'));
@@ -338,7 +338,7 @@ class block_accessibility extends block_base {
             $content .= html_writer::end_tag('div');
 
             $content .= html_writer::start_tag('div', array('style' => 'width:100%; position:relative; top:-20px;', 'class'=>'col-md-12 text-center'));
-            $content .= html_writer::tag('button', 'Toggle Bionic Mode', array('id'=>'bionic-mode', 'type'=>'button', 'class'=>'btn btn-outline-primary', 'title'=>'Toggle Bionic Mode', 'style'=>'border-radius:3px;'));
+            $content .= html_writer::tag('button', get_string('bionicbutton', 'block_accessibility'), array('id'=>'bionic-mode', 'type'=>'button', 'class'=>'btn btn-outline-primary', 'title'=>'Toggle Bionic Mode', 'style'=>'border-radius:3px;'));
             $content .= html_writer::end_tag('div');
             $content .= html_writer::tag('div',' ', array('style'=>'clear:both;'));
         }
@@ -368,7 +368,6 @@ class block_accessibility extends block_base {
             $this->page->requires->string_for_js('jsnocolour', 'block_accessibility');
             $this->page->requires->string_for_js('jsnosizereset', 'block_accessibility');
             $this->page->requires->string_for_js('jsnotloggedin', 'block_accessibility');
-            $this->page->requires->string_for_js('launchtoolbar', 'block_accessibility');
 
             $jsmodule = array(
                     'name' => 'block_accessibility',

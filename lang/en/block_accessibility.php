@@ -35,7 +35,6 @@ $string['jsnocolourreset'] = 'Error resetting colour scheme';
 $string['jsnosave'] = 'Error saving settings';
 $string['jsnosize'] = 'Error changing size';
 $string['jsnosizereset'] = 'Error resetting text size';
-$string['launchtoolbar'] = 'Launch ATbar';
 $string['pluginname'] = 'Accessibility';
 $string['pluginnameplural'] = 'Accessibility Blocks';
 $string['resettext'] = 'Reset Text Size (Clears Saved Setting)';
@@ -48,9 +47,6 @@ $string['col3text'] = 'Colour scheme 2';
 $string['col4text'] = 'Colour scheme 3';
 
 // Configuration form - please help us translate it on GitHub.
-$string['config_showATbar'] = 'ATbar';
-$string['config_showATbar_checkbox'] = 'Allow ATbar appearance within Accessibility block';
-$string['config_showATbar_help'] = 'Accessibility block also integrates ATbar from Southampton University ECS <a href="http://www.atbar.org">http://www.atbar.org</a>.';
 $string['config_fg'] = 'Text colour (not required)';
 $string['config_fg_help'] = 'Define colour scheme foreground colour here. Keep in mind that the colour will be applied uniformly to all user interface elements. It is not always desirable to have the same colour in each user interface element. <strong>It is recommended to leave foreground colour field empty</strong> so that elements can keep its default colours. Try to change background colour only.';
 $string['config_bg'] = 'Background colour';
@@ -60,6 +56,9 @@ $string['color_input_error'] = 'Please enter a color in a format as such: #FF005
 $string['accessibility:addinstance'] = 'Add a new Accessibility block';
 $string['accessibility:myaddinstance'] = 'Add a new Accessibility block to My home';
 $string['jsnotloggedin'] = 'Error! Please check if you are logged-in to the system or contact your administrator';
+
+$string['bionictitle'] = 'Reading Accessible Text';
+$string['bionicbutton'] = 'Toggle Accessible Text';
 
 $string['settingsheader'] = 'Accessibility Block Settings';
 $string['settingsheaderdesc'] = 'Settings for accessibility block';
