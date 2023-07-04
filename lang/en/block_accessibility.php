@@ -57,7 +57,7 @@ $string['accessibility:addinstance'] = 'Add a new Accessibility block';
 $string['accessibility:myaddinstance'] = 'Add a new Accessibility block to My home';
 $string['jsnotloggedin'] = 'Error! Please check if you are logged-in to the system or contact your administrator';
 
-$string['bionictitle'] = 'Reading Accessible Text';
+$string['bionictitle'] = 'Accessible Text';
 $string['bionicbutton'] = 'Toggle Accessible Text';
 
 $string['settingsheader'] = 'Accessibility Block Settings';

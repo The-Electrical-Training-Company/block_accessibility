@@ -124,7 +124,7 @@ function getValue(element) {
    var source = document.getElementById("page-content");
     source.innerHTML = oldText;
     var buttonclick = document.getElementById("bionic-mode");
-        buttonclick.innerText = "Toggle Bionic Mode";
+        buttonclick.innerText = get_string('bionicbutton', 'block_accessibility');
         console.clear();
 
     }

@@ -287,6 +287,7 @@ class block_accessibility extends block_base {
         // Bionic Reading
 
         $this->page->requires->js('/blocks/accessibility/bionic-mode.js');
+        $this->page->requires->string_for_js('bionicbutton', 'block_accessibility');
         $this->page->requires->js_init_call('initAPIkey', array('apikeyconfig'=>get_config('accessibility')->apikey));
 
         if ($PAGE->bodyid == "page-mod-book-view"){
@@ -338,7 +339,7 @@ class block_accessibility extends block_base {
             $content .= html_writer::end_tag('div');
 
             $content .= html_writer::start_tag('div', array('style' => 'width:100%; position:relative; top:-20px;', 'class'=>'col-md-12 text-center'));
-            $content .= html_writer::tag('button', get_string('bionicbutton', 'block_accessibility'), array('id'=>'bionic-mode', 'type'=>'button', 'class'=>'btn btn-outline-primary', 'title'=>'Toggle Bionic Mode', 'style'=>'border-radius:3px;'));
+            $content .= html_writer::tag('button', get_string('bionicbutton', 'block_accessibility'), array('id'=>'bionic-mode', 'type'=>'button', 'class'=>'btn btn-outline-primary', 'title'=>get_string('bionicbutton', 'block_accessibility'), 'style'=>'border-radius:3px;'));
             $content .= html_writer::end_tag('div');
             $content .= html_writer::tag('div',' ', array('style'=>'clear:both;'));
         }
